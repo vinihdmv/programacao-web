@@ -1,12 +1,18 @@
 <p align="center"><img src="https://i.giphy.com/RThN0hOS2GO4M.gif" /></p>
-<h1 align="center">Hi, I'm <a href="https://www.edisonlee55.com">VINICIUS RODRIGUES</a>!</h1>
+<h1 align="center">Hi, I'm <a href="https://www.edisonlee55.com">Vinicius Rodrigues</a>!</h1>
 <h1 align="center">Welcome to my GitHub profile!!</h1>
 
 <img align="left" src="https://orhun.dev/img/crow.png">
 
-### Hey!
+### Hey sou o mascote deste Repositorio!
 
+<br>
+<br>
+<br>
 
+<br>
+<br>
+<br>
 
 <p align="center">I'm currently working on Software,SPECIALLY WITH MAKING API's.</p>
 
