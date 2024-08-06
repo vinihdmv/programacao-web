@@ -1,7 +1,4 @@
-<p align="center">
-  <a href="https://www.edisonlee55.com"><img src="kita-ikuyo-rap.webp" alt="Banner"></a>
-</p>
-
+<p align="center"><img src="https://i.giphy.com/RThN0hOS2GO4M.gif" /></p>
 <h1 align="center">Hi, I'm <a href="https://www.edisonlee55.com">VINICIUS RODRIGUES</a>!</h1>
 <h1 align="center">Welcome to my GitHub profile!!</h1>
 
