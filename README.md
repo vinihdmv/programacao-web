@@ -2,6 +2,10 @@
 <h1 align="center">Hi, I'm <a href="https://www.edisonlee55.com">Vinicius Rodrigues</a>!</h1>
 <h1 align="center">Welcome to my GitHub profile!!</h1>
 
+<br>
+<br>
+<br>
+
 <img align="left" src="https://orhun.dev/img/crow.png">
 
 ### Hey sou o mascote deste Repositorio!
@@ -14,7 +18,7 @@
 <br>
 <br>
 
-<p align="center">I'm currently working on Software,SPECIALLY WITH MAKING API's.</p>
+<h2 align="center">I'm currently working on Software,SPECIALLY WITH MAKING API's.</h2>
 
 
 <h3 align="center">
