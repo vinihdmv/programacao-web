@@ -1,20 +1,29 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    color: #007bff;
+}
 
-body {
+body{
+background-image: url(fundo.jpg);
+}
+
+main {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(fundo.jpg);
+    
 }
 
-
 .login-container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 2em;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
 
@@ -42,9 +51,9 @@ body {
     padding: 0.8em;
     border: none;
     border-radius: 4px;
-    background-color: #007bff;
+    background:linear-gradient(#007bff, rgb(226, 226, 156) );
+    
     color: #fff;
     font-size: 1em;
     cursor: pointer;
 }
-
