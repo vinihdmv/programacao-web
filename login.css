@@ -7,6 +7,7 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-image: url(funny-monkey-studio.jpg);
 }
 
 
@@ -73,6 +74,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
     max-width: 390px;
     width: 100%;
+    margin-left: 900px;
 }
 
 #titulo {                     /*O hashtag ele serve para pegar um ID especifico, no html sao unicos */
