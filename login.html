@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LoginPage</title>
+   <link rel="stylesheet" href="login.css">
+   <script src="login.js"></script>
+
 </head>
 <body>
+    <header>
+        <div class="menu">
+            <h2> <a href="login.html">Login</a></h2>
+            <h2> <a href="games.html">game</a></h2>
+            <h2> <a href="us.html">us</a></h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1 id="titulo">Formulário de Informações Pessoais</h1>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" id="nome" name="name" placeholder="Seu nome">
     
+                <label for="number">Idade</label>
+                <input type="number" id="idade" name="number" placeholder="Sua idade">
+    
+                <label for="email">CPF</label>
+                <input type="email" id="cpf" name="email" placeholder="Seu CPF">
+    
+                <button onclick="submeter();">Enviar</button>
+            </div>
+    
+    </main>
+
+    <footer>
+
+
+    </footer>
 </body>
 </html>
