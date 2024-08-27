@@ -61,7 +61,7 @@ main {
     align-items: center;
     width: fit-content;
     background-image: url('fundotitle.jpg');
-    background-color: rgba(43, 44, 42, 0.7); 
+    background-color: rgba(100, 102, 98, 0.7); 
     background-blend-mode: darken; 
 }
 
