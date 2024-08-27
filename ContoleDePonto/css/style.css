@@ -7,6 +7,10 @@ body {
     margin: 0;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    background-image: url('../image/img2.png');
+    color: beige;
+    background-color: rgba(100, 102, 98, 0.7); 
+    background-blend-mode: darken; 
 }
 
 #dataHora {
