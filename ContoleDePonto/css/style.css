@@ -21,20 +21,54 @@ body {
 
 #fusoHorario {
     margin-top: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* Estilos do Dialog */
+
 dialog {
     border: none;
     border-radius: 8px;
-    padding: 20px;
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    padding: 40px;
+    width: 400px; /* Ajuste o tamanho conforme necessário */
+     height: 400px;
     max-width: 90%; /* Para que o diálogo não ultrapasse a tela */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     background-color: #fefefe; /* Cor de fundo do diálogo */
+    position: relative; /* Necessário para posicionar o botão de fechar */
+    display: none; /* Inicia o diálogo oculto */
+    flex-direction: column; /* Alinhar o conteúdo verticalmente */
+}
+
+/* Estilos do Botão de Fechar */
+.close {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da borda direita */
+    font-size: 24px; /* Tamanho do "X" */
+    color: #aaa; /* Cor do "X" */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black; /* Cor do "X" ao passar o mouse */
+}
+
+/* Estilos do Conteúdo do Dialog */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para posicionar o conteúdo e botões na parte inferior */
+    height: 300px; /* Ocupa toda a altura do diálogo */
+}
+
+/* Estilos da Data e Hora no Dialog */
+#dialogDataHora {
+    font-size: 1.5em;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+    margin-bottom: 20px; /* Espaço entre a data/hora e os botões */
 }
 
 /* Estilos dos Botões dentro do Dialog */
@@ -45,9 +79,7 @@ button {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -55,3 +87,5 @@ button {
 button:hover {
     background-color: #45a049; /* Cor de fundo verde mais escuro ao passar o mouse */
 }
+
+/* Estilos dos Botões de Formulário */

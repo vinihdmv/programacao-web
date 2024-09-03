@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Sistema de Controle de Ponto</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Sistema de Controle de Ponto</h1>
@@ -20,12 +20,16 @@
     
     <!-- O Dialog -->
     <dialog id="myDialog">
+        <button id="closeDialogBtn" class="close">&times;</button>
+        <p id="dialogDataHora"></p>
         <form method="dialog">
-            <p>Batendo Ponto</p>
-            <button id="closeDialogBtn">Fechar</button>
+            <button id="entradaBtn">Entrada</button>
+            <button id="intervaloBtn">Intervalo</button>
+            <button id="voltaBtn">Volta</button>
+            <button id="saidaBtn">Saída</button>
         </form>
     </dialog>
 
-    <script src="../js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
