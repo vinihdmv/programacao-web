@@ -5,17 +5,27 @@ function atualizarDataHora() {
     var hora = agora.toLocaleTimeString('en-US', opcoes);
     var data = agora.toLocaleDateString('en-US', opcoes);
     document.getElementById('dataHora').textContent = data + ' ' + hora;
-
-    // Exibir as horas dos países escolhidos
-    
 }
 
 setInterval(atualizarDataHora, 1000);
-
-// Atualiza a hora imediatamente quando o fuso horário é alterado
 document.getElementById('fusoHorario').addEventListener('change', atualizarDataHora);
 
-setInterval(atualizarDataHora, 1000);
+// Obtenha o dialog
+var dialog = document.getElementById("myDialog");
 
-// Atualiza a hora imediatamente quando o fuso horário é alterado
-document.getElementById('fusoHorario').addEventListener('change', atualizarDataHora);
+// Obtenha o botão que abre o dialog
+var btn = document.getElementById("baterPontoBtn");
+
+// Quando o usuário clicar no botão, abra o dialog
+btn.onclick = function() {
+    dialog.showModal();
+}
+
+var closeBtn = document.getElementById("closeDialogBtn");
+
+
+closeBtn.onclick = function() {
+    dialog.close();
+}
+
+

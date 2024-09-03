@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 body {
     display: flex;
     flex-direction: column;
@@ -23,4 +24,34 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/* Estilos do Dialog */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    max-width: 90%; /* Para que o diálogo não ultrapasse a tela */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fefefe; /* Cor de fundo do diálogo */
+}
+
+/* Estilos dos Botões dentro do Dialog */
+button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo verde mais escuro ao passar o mouse */
 }

@@ -15,10 +15,17 @@
         <option value="Asia/Tokyo">Tóquio</option>
         <option value="Australia/Sydney">Sydney</option>
         <option value="Europe/Moscow">Moscow</option>
-        
-
     </select>
-    <button onclick="alert('Ponto registrado!')">Bater Ponto</button>
+    <button id="baterPontoBtn">Bater Ponto</button>
+    
+    <!-- O Dialog -->
+    <dialog id="myDialog">
+        <form method="dialog">
+            <p>Batendo Ponto</p>
+            <button id="closeDialogBtn">Fechar</button>
+        </form>
+    </dialog>
+
     <script src="../js/index.js"></script>
 </body>
 </html>
