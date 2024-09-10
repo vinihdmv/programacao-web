@@ -23,12 +23,20 @@
         <button id="closeDialogBtn" class="close">&times;</button>
         <p id="dialogDataHora"></p>
         <form method="dialog">
-            <button id="entradaBtn">Entrada</button>
-            <button id="intervaloBtn">Intervalo</button>
-            <button id="voltaBtn">Volta</button>
-            <button id="saidaBtn">Saída</button>
+            
+            <select id="actionSelect">
+
+                <option value="entrada">Entrada</option>
+                <option value="intervalo">Intervalo</option>
+                <option value="volta">Volta</option>
+                <option value="saida">Saída</option>
+
+            </select>
+
+            <button id="registrarPontoBtn">Registrar ponto</button>
         </form>
     </dialog>
+    
 
     <script src="js/index.js"></script>
 </body>

@@ -1,3 +1,4 @@
+// Função para atualizar a data e hora
 function atualizarDataHora() {
     var agora = new Date();
     var fusoHorario = document.getElementById('fusoHorario').value;
@@ -39,3 +40,48 @@ var closeBtn = document.getElementById("closeDialogBtn");
 closeBtn.onclick = function() {
     dialog.style.display = 'none'; // Torna o diálogo invisível
 }
+
+// Objeto para armazenar os registros de pontos
+var registrosPontos = [];
+
+// Função para obter a localização do usuário
+function obterLocalizacao(callback) {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            callback(position.coords.latitude, position.coords.longitude);
+        }, function() {
+            alert('Não foi possível obter a sua localização.');
+            callback(null, null);
+        });
+    } else {
+        alert('Geolocalização não é suportada por este navegador.');
+        callback(null, null);
+    }
+}
+
+// Obtenha o botão de registrar ponto
+var registrarPontoBtn = document.getElementById("registrarPontoBtn");
+
+// Quando o usuário clicar no botão "Registrar ponto"
+registrarPontoBtn.onclick = function() {
+    var agora = new Date();
+    var data = agora.toLocaleDateString('en-US');
+    var hora = agora.toLocaleTimeString('en-US');
+    var selecionado = document.getElementById('actionSelect').value;
+    
+    obterLocalizacao(function(latitude, longitude) {
+        if (latitude !== null && longitude !== null) {
+            var registro = {
+                data: data,
+                hora: hora,
+                select: selecionado, 
+                latitude: latitude,
+                longitude: longitude
+            };
+
+            // Adiciona o registro ao array
+            registrosPontos.push(registro);
+            console.log('Ponto registrado:', registro);
+        }
+    });
+};
