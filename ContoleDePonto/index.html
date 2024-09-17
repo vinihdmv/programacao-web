@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <video autoplay muted loop id="bgVideo">
+        <source src="./image/videoplayback.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+
     <h1>Sistema de Controle de Ponto</h1>
     <p id="dataHora"></p>
     
@@ -20,6 +26,7 @@
     
     <!-- O Dialog -->
     <dialog id="myDialog">
+        <h1 class="dialog-title">Controle de Ponto</h1>
         <button id="closeDialogBtn" class="close">&times;</button>
         <p id="dialogDataHora"></p>
         <form method="dialog">
@@ -36,7 +43,12 @@
             <button id="registrarPontoBtn">Registrar ponto</button>
         </form>
     </dialog>
+
+    <div id="popup" class="popup">
+        <img id="popupImage" src="./image/img.jpg" alt="Ponto registrado" />
+    </div>
     
+
 
     <script src="js/index.js"></script>
 </body>

@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     display: flex;
     flex-direction: column;
@@ -5,12 +6,22 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    background-image: url('../image/img2.png');
     color: beige;
-    background-color: rgba(100, 102, 98, 0.7); 
-    background-blend-mode: darken; 
+    position: relative; /* Permite sobrepor elementos */
+    z-index: 1;
+}
+
+/* Video de fundo */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    object-fit: cover; /* Faz o vídeo cobrir a tela inteira */
+    filter: brightness(0.7); /* Aplica um efeito de escurecimento no vídeo */
 }
 
 #dataHora {
@@ -20,6 +31,12 @@ body {
 
 #fusoHorario {
     margin-top: 20px;
+}
+
+.dialog-title {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
 }
 
 dialog {
@@ -53,7 +70,7 @@ dialog {
 }
 
 form {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
@@ -76,8 +93,9 @@ select {
     margin-bottom: 20px;
 }
 
+/* Estilos para os botões com cores alaranjadas */
 #registrarPontoBtn {
-    background-color: #4CAF50;
+    background-color: #FFA500; /* Cor alaranjada suave */
     border: none;
     color: white;
     padding: 10px 20px;
@@ -87,15 +105,15 @@ select {
     cursor: pointer;
     border-radius: 4px;
     margin-bottom: 300px;
+    margin-top: 100px;
 }
 
 #registrarPontoBtn:hover {
- 
-    background-color: #45a049;
+    background-color: #FF8C00; /* Cor mais escura ao passar o mouse */
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #FFA500; /* Cor alaranjada suave */
     border: none;
     color: white;
     padding: 10px 20px;
@@ -107,5 +125,31 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #FF8C00; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos para o pop-up */
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: transparent; /* Mantido transparente para destacar apenas a imagem */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1000;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup img {
+    max-width: 1000px; 
+    height: auto;
+    border: 5px solid black; 
+    border-radius: 10px; 
 }
